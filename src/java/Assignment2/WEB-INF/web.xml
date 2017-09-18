@@ -1,0 +1,36 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2.2.dtd">
+
+<web-app>
+
+  <display-name>Online shopping</display-name>
+  <description>This is small online shopping site</description>
+
+<servlet>
+    <servlet-name>Sender</servlet-name>
+    <display-name>Sender</display-name>
+    <servlet-class>Sender</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+ 
+<servlet>
+    <servlet-name>Reciever</servlet-name>
+    <display-name>Reciever</display-name>
+    <servlet-class>Reciever</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>Sender</servlet-name>
+    <url-pattern>/Sender</url-pattern>
+  </servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>Reciever</servlet-name>
+    <url-pattern>/Reciever</url-pattern>
+  </servlet-mapping>
+
+
+ <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>
