@@ -1,0 +1,105 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2.2.dtd">
+
+<web-app>
+
+  <display-name>Online shopping</display-name>
+  <description>This is small online shopping site</description>
+
+<servlet>
+    <servlet-name>UserInformation</servlet-name>
+    <display-name>UserInformation</display-name>
+    <servlet-class>UserInformation</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>RecieveUserinformation</servlet-name>
+    <display-name>RecieveUserinformation</display-name>
+    <servlet-class>RecieveUserinformation</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>Correspondence</servlet-name>
+    <display-name>Correspondence</display-name>
+    <servlet-class>Correspondence</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>RecieveCorrespondence</servlet-name>
+    <display-name>RecieveCorrespondence</display-name>
+    <servlet-class>RecieveCorrespondence</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Security</servlet-name>
+    <display-name>Security</display-name>
+    <servlet-class>Security</servlet-class>
+	
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>RecieveSecurity</servlet-name>
+    <display-name>RecieveSecurity</display-name>
+    <servlet-class>RecieveSecurity</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+    <servlet>
+    <servlet-name>Summary</servlet-name>
+    <display-name>Summary</display-name>
+    <servlet-class>Summary</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+ 
+
+ 
+  <servlet-mapping>
+    <servlet-name>UserInformation</servlet-name>
+    <url-pattern>/UserInformation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>RecieveUserinformation</servlet-name>
+    <url-pattern>/RecieveUserinformation</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet-mapping>
+    <servlet-name>Correspondence</servlet-name>
+    <url-pattern>/Correspondence</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>RecieveCorrespondence</servlet-name>
+    <url-pattern>/RecieveCorrespondence</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Security</servlet-name>
+    <url-pattern>/Security</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>RecieveSecurity</servlet-name>
+    <url-pattern>/RecieveSecurity</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>Summary</servlet-name>
+    <url-pattern>/Summary</url-pattern>
+  </servlet-mapping>
+
+
+
+
+ <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>
